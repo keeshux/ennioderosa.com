@@ -1,0 +1,12 @@
+.DS_Store
+*.swp
+*.tar.gz
+*.conf
+.jekyll-metadata
+.jekyll-cache
+_site
+Gemfile.lock
+/docker-compose.yml
+exclude
+old
+resume
