@@ -63,7 +63,28 @@
     height: 70px;
     object-fit: cover;
 }
+
+.painting-unavailable.hidden {
+    display: none;
+}
 </style>
+<script>
+var isShowingUnavailable = true;
+function toggleUnavailable() {
+    isShowingUnavailable = !isShowingUnavailable;
+    const button = document.getElementById('painting-visibility-toggle');
+    button.innerText = isShowingUnavailable ? 'Nascondi non disponibili' : 'Mostra non disponibili';
+    document
+        .querySelectorAll('.painting-unavailable')
+        .forEach(el => {
+            el.classList.toggle('hidden');
+        });
+}
+</script>
+
+<p>
+    <button id="painting-visibility-toggle" onclick="toggleUnavailable()">Nascondi non disponibili</button>
+</p>
 
 
 
@@ -86,17 +107,13 @@
     
 
     
-    <a href="/paintings/0290/"><img src="/paintings/0290/th.jpg" /></a>
+    
+    <a href="/paintings/0290/" class=""><img src="/paintings/0290/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0263/"><img src="/paintings/0263/th.jpg" /></a>
     
-
-    
-
-    
-
+    <a href="/paintings/0263/" class="painting-unavailable"><img src="/paintings/0263/th.jpg" /></a>
     
 
     
@@ -108,11 +125,19 @@
     
 
     
-    <a href="/paintings/0278/"><img src="/paintings/0278/th.jpg" /></a>
+
     
 
     
-    <a href="/paintings/0282/"><img src="/paintings/0282/th.jpg" /></a>
+
+    
+    
+    <a href="/paintings/0278/" class="painting-unavailable"><img src="/paintings/0278/th.jpg" /></a>
+    
+
+    
+    
+    <a href="/paintings/0282/" class="painting-unavailable"><img src="/paintings/0282/th.jpg" /></a>
     
 
     
@@ -173,21 +198,25 @@
     
 
     
-    <a href="/paintings/0255/"><img src="/paintings/0255/th.jpg" /></a>
+    
+    <a href="/paintings/0255/" class=""><img src="/paintings/0255/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0252/"><img src="/paintings/0252/th.jpg" /></a>
+    
+    <a href="/paintings/0252/" class="painting-unavailable"><img src="/paintings/0252/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0027/"><img src="/paintings/0027/th.jpg" /></a>
+    
+    <a href="/paintings/0027/" class="painting-unavailable"><img src="/paintings/0027/th.jpg" /></a>
     
 
     
 
     
-    <a href="/paintings/0028/"><img src="/paintings/0028/th.jpg" /></a>
+    
+    <a href="/paintings/0028/" class="painting-unavailable"><img src="/paintings/0028/th.jpg" /></a>
     
 
     
@@ -260,21 +289,15 @@
     
 
     
-    <a href="/paintings/0279/"><img src="/paintings/0279/th.jpg" /></a>
+    
+    <a href="/paintings/0279/" class="painting-unavailable"><img src="/paintings/0279/th.jpg" /></a>
     
 
     
 
     
-    <a href="/paintings/0247/"><img src="/paintings/0247/th.jpg" /></a>
     
-
-    
-
-    
-
-    
-
+    <a href="/paintings/0247/" class="painting-unavailable"><img src="/paintings/0247/th.jpg" /></a>
     
 
     
@@ -294,7 +317,16 @@
     
 
     
-    <a href="/paintings/0024/"><img src="/paintings/0024/th.jpg" /></a>
+
+    
+
+    
+
+    
+
+    
+    
+    <a href="/paintings/0024/" class="painting-unavailable"><img src="/paintings/0024/th.jpg" /></a>
     
 
     
@@ -325,7 +357,8 @@
     
 
     
-    <a href="/paintings/0056/"><img src="/paintings/0056/th.jpg" /></a>
+    
+    <a href="/paintings/0056/" class="painting-unavailable"><img src="/paintings/0056/th.jpg" /></a>
     
 
     
@@ -367,7 +400,8 @@
     
 
     
-    <a href="/paintings/0055/"><img src="/paintings/0055/th.jpg" /></a>
+    
+    <a href="/paintings/0055/" class="painting-unavailable"><img src="/paintings/0055/th.jpg" /></a>
     
 
     
@@ -375,7 +409,8 @@
     
 
     
-    <a href="/paintings/0012/"><img src="/paintings/0012/th.jpg" /></a>
+    
+    <a href="/paintings/0012/" class="painting-unavailable"><img src="/paintings/0012/th.jpg" /></a>
     
 
     
@@ -387,11 +422,13 @@
     
 
     
-    <a href="/paintings/0151/"><img src="/paintings/0151/th.jpg" /></a>
+    
+    <a href="/paintings/0151/" class="painting-unavailable"><img src="/paintings/0151/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0150/"><img src="/paintings/0150/th.jpg" /></a>
+    
+    <a href="/paintings/0150/" class="painting-unavailable"><img src="/paintings/0150/th.jpg" /></a>
     
 
     
@@ -460,11 +497,13 @@
     
 
     
-    <a href="/paintings/0157/"><img src="/paintings/0157/th.jpg" /></a>
+    
+    <a href="/paintings/0157/" class="painting-unavailable"><img src="/paintings/0157/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0158/"><img src="/paintings/0158/th.jpg" /></a>
+    
+    <a href="/paintings/0158/" class="painting-unavailable"><img src="/paintings/0158/th.jpg" /></a>
     
 
     
@@ -509,7 +548,8 @@
     
 
     
-    <a href="/paintings/0155/"><img src="/paintings/0155/th.jpg" /></a>
+    
+    <a href="/paintings/0155/" class="painting-unavailable"><img src="/paintings/0155/th.jpg" /></a>
     
 
     
@@ -554,7 +594,8 @@
 <div class="paintings-preview">
 
     
-    <a href="/paintings/0147/"><img src="/paintings/0147/th.jpg" /></a>
+    
+    <a href="/paintings/0147/" class="painting-unavailable"><img src="/paintings/0147/th.jpg" /></a>
     
 
     
@@ -669,7 +710,8 @@
     
 
     
-    <a href="/paintings/0203/"><img src="/paintings/0203/th.jpg" /></a>
+    
+    <a href="/paintings/0203/" class="painting-unavailable"><img src="/paintings/0203/th.jpg" /></a>
     
 
     
@@ -736,27 +778,23 @@
     
 
     
-    <a href="/paintings/0145/"><img src="/paintings/0145/th.jpg" /></a>
+    
+    <a href="/paintings/0145/" class="painting-unavailable"><img src="/paintings/0145/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0142/"><img src="/paintings/0142/th.jpg" /></a>
+    
+    <a href="/paintings/0142/" class="painting-unavailable"><img src="/paintings/0142/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0143/"><img src="/paintings/0143/th.jpg" /></a>
+    
+    <a href="/paintings/0143/" class="painting-unavailable"><img src="/paintings/0143/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0144/"><img src="/paintings/0144/th.jpg" /></a>
     
-
-    
-
-    
-
-    
-
+    <a href="/paintings/0144/" class="painting-unavailable"><img src="/paintings/0144/th.jpg" /></a>
     
 
     
@@ -778,7 +816,16 @@
     
 
     
-    <a href="/paintings/0146/"><img src="/paintings/0146/th.jpg" /></a>
+
+    
+
+    
+
+    
+
+    
+    
+    <a href="/paintings/0146/" class="painting-unavailable"><img src="/paintings/0146/th.jpg" /></a>
     
 
 </div>
@@ -791,7 +838,8 @@
     
 
     
-    <a href="/paintings/0050/"><img src="/paintings/0050/th.jpg" /></a>
+    
+    <a href="/paintings/0050/" class=""><img src="/paintings/0050/th.jpg" /></a>
     
 
     
@@ -801,19 +849,8 @@
     
 
     
-    <a href="/paintings/0051/"><img src="/paintings/0051/th.jpg" /></a>
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
+    <a href="/paintings/0051/" class=""><img src="/paintings/0051/th.jpg" /></a>
     
 
     
@@ -839,7 +876,20 @@
     
 
     
-    <a href="/paintings/0048/"><img src="/paintings/0048/th.jpg" /></a>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <a href="/paintings/0048/" class=""><img src="/paintings/0048/th.jpg" /></a>
     
 
     
@@ -849,7 +899,8 @@
     
 
     
-    <a href="/paintings/0047/"><img src="/paintings/0047/th.jpg" /></a>
+    
+    <a href="/paintings/0047/" class=""><img src="/paintings/0047/th.jpg" /></a>
     
 
     
@@ -870,7 +921,8 @@
     
 
     
-    <a href="/paintings/0149/"><img src="/paintings/0149/th.jpg" /></a>
+    
+    <a href="/paintings/0149/" class="painting-unavailable"><img src="/paintings/0149/th.jpg" /></a>
     
 
     
@@ -985,7 +1037,8 @@
     
 
     
-    <a href="/paintings/0053/"><img src="/paintings/0053/th.jpg" /></a>
+    
+    <a href="/paintings/0053/" class=""><img src="/paintings/0053/th.jpg" /></a>
     
 
     
@@ -1072,7 +1125,8 @@
     
 
     
-    <a href="/paintings/0049/"><img src="/paintings/0049/th.jpg" /></a>
+    
+    <a href="/paintings/0049/" class=""><img src="/paintings/0049/th.jpg" /></a>
     
 
     
@@ -1137,7 +1191,8 @@
     
 
     
-    <a href="/paintings/0052/"><img src="/paintings/0052/th.jpg" /></a>
+    
+    <a href="/paintings/0052/" class=""><img src="/paintings/0052/th.jpg" /></a>
     
 
     

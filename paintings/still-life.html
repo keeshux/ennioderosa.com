@@ -63,7 +63,28 @@
     height: 70px;
     object-fit: cover;
 }
+
+.painting-unavailable.hidden {
+    display: none;
+}
 </style>
+<script>
+var isShowingUnavailable = true;
+function toggleUnavailable() {
+    isShowingUnavailable = !isShowingUnavailable;
+    const button = document.getElementById('painting-visibility-toggle');
+    button.innerText = isShowingUnavailable ? 'Nascondi non disponibili' : 'Mostra non disponibili';
+    document
+        .querySelectorAll('.painting-unavailable')
+        .forEach(el => {
+            el.classList.toggle('hidden');
+        });
+}
+</script>
+
+<p>
+    <button id="painting-visibility-toggle" onclick="toggleUnavailable()">Nascondi non disponibili</button>
+</p>
 
 
 
@@ -80,7 +101,8 @@
     
 
     
-    <a href="/paintings/0058/"><img src="/paintings/0058/th.jpg" /></a>
+    
+    <a href="/paintings/0058/" class=""><img src="/paintings/0058/th.jpg" /></a>
     
 
 </div>
@@ -89,7 +111,8 @@
 <div class="paintings-preview">
 
     
-    <a href="/paintings/0057/"><img src="/paintings/0057/th.jpg" /></a>
+    
+    <a href="/paintings/0057/" class=""><img src="/paintings/0057/th.jpg" /></a>
     
 
     

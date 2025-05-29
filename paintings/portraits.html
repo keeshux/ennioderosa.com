@@ -63,7 +63,28 @@
     height: 70px;
     object-fit: cover;
 }
+
+.painting-unavailable.hidden {
+    display: none;
+}
 </style>
+<script>
+var isShowingUnavailable = true;
+function toggleUnavailable() {
+    isShowingUnavailable = !isShowingUnavailable;
+    const button = document.getElementById('painting-visibility-toggle');
+    button.innerText = isShowingUnavailable ? 'Nascondi non disponibili' : 'Mostra non disponibili';
+    document
+        .querySelectorAll('.painting-unavailable')
+        .forEach(el => {
+            el.classList.toggle('hidden');
+        });
+}
+</script>
+
+<p>
+    <button id="painting-visibility-toggle" onclick="toggleUnavailable()">Nascondi non disponibili</button>
+</p>
 
 
 
@@ -78,7 +99,8 @@
 <div class="paintings-preview">
 
     
-    <a href="/paintings/0259/"><img src="/paintings/0259/th.jpg" /></a>
+    
+    <a href="/paintings/0259/" class="painting-unavailable"><img src="/paintings/0259/th.jpg" /></a>
     
 
     
@@ -97,11 +119,13 @@
     
 
     
-    <a href="/paintings/0260/"><img src="/paintings/0260/th.jpg" /></a>
+    
+    <a href="/paintings/0260/" class="painting-unavailable"><img src="/paintings/0260/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0258/"><img src="/paintings/0258/th.jpg" /></a>
+    
+    <a href="/paintings/0258/" class="painting-unavailable"><img src="/paintings/0258/th.jpg" /></a>
     
 
 </div>
@@ -112,7 +136,8 @@
     
 
     
-    <a href="/paintings/0261/"><img src="/paintings/0261/th.jpg" /></a>
+    
+    <a href="/paintings/0261/" class="painting-unavailable"><img src="/paintings/0261/th.jpg" /></a>
     
 
     

@@ -63,7 +63,28 @@
     height: 70px;
     object-fit: cover;
 }
+
+.painting-unavailable.hidden {
+    display: none;
+}
 </style>
+<script>
+var isShowingUnavailable = true;
+function toggleUnavailable() {
+    isShowingUnavailable = !isShowingUnavailable;
+    const button = document.getElementById('painting-visibility-toggle');
+    button.innerText = isShowingUnavailable ? 'Nascondi non disponibili' : 'Mostra non disponibili';
+    document
+        .querySelectorAll('.painting-unavailable')
+        .forEach(el => {
+            el.classList.toggle('hidden');
+        });
+}
+</script>
+
+<p>
+    <button id="painting-visibility-toggle" onclick="toggleUnavailable()">Nascondi non disponibili</button>
+</p>
 
 
 
@@ -78,7 +99,8 @@
 <div class="paintings-preview">
 
     
-    <a href="/paintings/0318/"><img src="/paintings/0318/th.jpg" /></a>
+    
+    <a href="/paintings/0318/" class=""><img src="/paintings/0318/th.jpg" /></a>
     
 
     
@@ -109,21 +131,13 @@
     
 
     
-    <a href="/paintings/0311/"><img src="/paintings/0311/th.jpg" /></a>
+    
+    <a href="/paintings/0311/" class="painting-unavailable"><img src="/paintings/0311/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0310/"><img src="/paintings/0310/th.jpg" /></a>
     
-
-    
-
-    
-
-    
-
-    
-    <a href="/paintings/0341/"><img src="/paintings/0341/th.jpg" /></a>
+    <a href="/paintings/0310/" class=""><img src="/paintings/0310/th.jpg" /></a>
     
 
     
@@ -133,7 +147,19 @@
     
 
     
-    <a href="/paintings/0308/"><img src="/paintings/0308/th.jpg" /></a>
+    
+    <a href="/paintings/0341/" class=""><img src="/paintings/0341/th.jpg" /></a>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <a href="/paintings/0308/" class=""><img src="/paintings/0308/th.jpg" /></a>
     
 
 </div>
@@ -150,7 +176,8 @@
     
 
     
-    <a href="/paintings/0241/"><img src="/paintings/0241/th.jpg" /></a>
+    
+    <a href="/paintings/0241/" class="painting-unavailable"><img src="/paintings/0241/th.jpg" /></a>
     
 
     
@@ -160,11 +187,13 @@
     
 
     
-    <a href="/paintings/0245/"><img src="/paintings/0245/th.jpg" /></a>
+    
+    <a href="/paintings/0245/" class="painting-unavailable"><img src="/paintings/0245/th.jpg" /></a>
     
 
     
-    <a href="/paintings/0243/"><img src="/paintings/0243/th.jpg" /></a>
+    
+    <a href="/paintings/0243/" class="painting-unavailable"><img src="/paintings/0243/th.jpg" /></a>
     
 
     
@@ -181,7 +210,8 @@
     
 
     
-    <a href="/paintings/0045/"><img src="/paintings/0045/th.jpg" /></a>
+    
+    <a href="/paintings/0045/" class=""><img src="/paintings/0045/th.jpg" /></a>
     
 
     
@@ -191,7 +221,8 @@
     
 
     
-    <a href="/paintings/0046/"><img src="/paintings/0046/th.jpg" /></a>
+    
+    <a href="/paintings/0046/" class=""><img src="/paintings/0046/th.jpg" /></a>
     
 
     
@@ -216,7 +247,8 @@
     
 
     
-    <a href="/paintings/0276/"><img src="/paintings/0276/th.jpg" /></a>
+    
+    <a href="/paintings/0276/" class="painting-unavailable"><img src="/paintings/0276/th.jpg" /></a>
     
 
     
