@@ -1,6 +1,6 @@
 #links {
-    margin-left: 0;
     list-style: none;
+    margin-left: 0;
 }
 
 #links > li {
@@ -14,4 +14,9 @@
 
 #links > li:last-child::after {
   content: "";
+}
+
+#painting-metadata {
+    list-style: none;
+    margin-left: 0;
 }
