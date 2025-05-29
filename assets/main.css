@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Reset some basic elements
  */
@@ -644,6 +645,59 @@ table td {
 }
 .highlight .il {
   color: #099;
+}
+
+#links {
+  list-style: none;
+  margin-left: 0;
+}
+
+#links > li {
+  display: inline;
+}
+
+#links > li::after {
+  content: " → ";
+  padding: 0 0.2em;
+}
+
+#links > li:last-child::after {
+  content: "";
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 2em;
+}
+
+.paintings-image > img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.painting-unavailable.hidden {
+  display: none;
+}
+
+#painting-metadata {
+  list-style: none;
+  margin-left: 0;
+}
+
+#exhibitions h2 {
+  font-size: 1.8em;
+}
+
+#exhibitions h3 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+#exhibition-pictures > img {
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
