@@ -1,0 +1,17 @@
+#links {
+    margin-left: 0;
+    list-style: none;
+}
+
+#links > li {
+    display: inline;
+}
+
+#links > li::after {
+  content: " → ";
+  padding: 0 0.2em;
+}
+
+#links > li:last-child::after {
+  content: "";
+}
