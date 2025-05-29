@@ -1,0 +1,45 @@
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `serve` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+/opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-remote-theme-0.4.1/lib/jekyll-remote-theme/munger.rb:55:in `configure_theme': undefined method `configure_sass' for #<Jekyll::RemoteTheme::Theme host="github.com" owner="pages-themes" name="tactile" ref="v0.2.0" root="/private/var/folders/99/6_dvw57s7n7d1m8sny1mfn500000gn/T/jekyll-remote-theme-20250529-81195-kutula"> (NoMethodError)
+
+        site.theme.configure_sass
+                  ^^^^^^^^^^^^^^^
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-remote-theme-0.4.1/lib/jekyll-remote-theme/munger.rb:26:in `munge!'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-remote-theme-0.4.1/lib/jekyll-remote-theme.rb:27:in `init'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-remote-theme-0.4.1/lib/jekyll-remote-theme.rb:33:in `block in <top (required)>'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/hooks.rb:103:in `block in trigger'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/hooks.rb:102:in `each'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/hooks.rb:102:in `trigger'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:119:in `reset'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:35:in `initialize'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:30:in `new'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:30:in `process'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:85:in `block (2 levels) in init_with_program'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/bin/jekyll:25:in `load'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/bin/jekyll:25:in `<top (required)>'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli/exec.rb:59:in `load'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli/exec.rb:59:in `kernel_load'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli/exec.rb:23:in `run'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli.rb:452:in `exec'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli.rb:35:in `dispatch'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/cli.rb:29:in `start'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/exe/bundle:28:in `block in <top (required)>'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /opt/homebrew/lib/ruby/gems/3.2.0/gems/bundler-2.6.8/exe/bundle:20:in `<top (required)>'
+	from /opt/homebrew/opt/ruby@3.2/bin/bundle:25:in `load'
+	from /opt/homebrew/opt/ruby@3.2/bin/bundle:25:in `<main>'
